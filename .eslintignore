@@ -2,3 +2,5 @@
 /build
 
 /commitlint.config.js
+
+src/stories
