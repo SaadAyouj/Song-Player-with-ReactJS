@@ -1,10 +1,9 @@
-import React from "react";
-import "./App.css";
+import HomePage from "./containers/HomePage/HomePage.page";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">Hello</header>
+    <div>
+      <HomePage />
     </div>
   );
 }

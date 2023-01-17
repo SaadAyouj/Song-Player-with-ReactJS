@@ -32,6 +32,12 @@
   },
   "plugins": ["react", "@typescript-eslint", "prettier"],
   "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
     "quotes": [
       "error",
       "double",
@@ -50,5 +56,11 @@
     "react/react-in-jsx-scope": ["off"],
     "react/jsx-props-no-spreading": ["warn"],
     "no-shadow": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {},
+      "webpack": {}
+    }
   }
 }
