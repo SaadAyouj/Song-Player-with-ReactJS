@@ -2,13 +2,15 @@
   box-shadow: 25px 0px 11px 0px rgba(0, 0, 0, 0.22);
   -webkit-box-shadow: 25px 0px 11px 0px rgba(0, 0, 0, 0.22);
   -moz-box-shadow: 25px 0px 11px 0px rgba(0, 0, 0, 0.22);
-  width: 350px;
+  width: 35%;
   position: absolute;
   top: 0;
   bottom: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 .double-column {
-  margin-left: 300px;
+  margin-left: 35%;
   align-content: center;
   text-align: center;
 }

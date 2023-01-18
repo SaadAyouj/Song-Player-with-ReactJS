@@ -1,16 +1,27 @@
 import "./songCard.styles.css";
 
-function SongCard() {
+function SongCard({
+  song,
+  setSong,
+  active,
+}: {
+  song: any;
+  setSong: any;
+  active: boolean;
+}) {
   return (
-    <div className="container">
-      <img
-        id="img"
-        src="https://chillhop.com/wp-content/uploads/2020/09/0255e8b8c74c90d4a27c594b3452b2daafae608d-1024x1024.jpg"
-        alt="Music"
-      />
+    <div
+      className="container"
+      onClick={() => setSong(song)}
+      role="presentation"
+      style={active ? { backgroundColor: "#89B3D5" } : {}}
+    >
+      <div>
+        <img id="img" src={song.cover} alt="Music" />
+      </div>
       <div className="description">
-        <h4>Title song</h4>
-        <span className="artist">Artist</span>
+        <span>{song.name}</span>
+        <span className="artist">{song.artist}</span>
       </div>
     </div>
   );

@@ -1,14 +1,17 @@
 .sidebar {
-  width: 250px;
+  width: 100%;
   position: absolute;
   top: 0;
   bottom: 0;
 }
 
-.title-sidebar {
-  margin: 20px;
+.title-sidebar{
+  padding-left: 6%;
 }
 
-ul {
-  list-style-type: none;
+.sideBar_songs {
+  width: 100%;
+ display:flex;
+ flex-direction: column;
+ justify-content: space-between;
 }

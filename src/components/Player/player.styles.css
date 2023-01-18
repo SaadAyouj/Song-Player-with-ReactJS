@@ -1,7 +1,52 @@
 .content {
   display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 500px;
+  padding: 5%;
 }
 
-#col {
-  flex-direction: column;
+#player_Img {
+  border-radius: 40px;
+  height: 250px;
+  width: 250px;
+}
+
+.player_ctr{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.player_btns{
+  font-size: 2rem;
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+.player_btns:hover{
+  color: rgb(167, 159, 159);
+}
+
+.nav{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+.nav_wp{
+  min-width: 100%;
+  background-color: rgba(119, 119, 119, 0.781);
+  height: 5px;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.bar{
+  width: 0;
+  height: 100%;
+  background-color: rgb(37, 103, 226);
+  border-radius: 30px;
 }
