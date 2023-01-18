@@ -4,3 +4,5 @@
 /commitlint.config.js
 
 src/stories
+
+src/server

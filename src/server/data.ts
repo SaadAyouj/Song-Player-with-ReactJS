@@ -1,7 +1,7 @@
 import { uuid as uuidv4 } from "uuidv4";
 import { ISongs } from "../types/ISongs.js";
 
-const chillHop: ISongs[] = [
+export const chillHop: ISongs[] = [
   {
     name: "Beaver Creek",
     cover:
@@ -64,4 +64,6 @@ const chillHop: ISongs[] = [
   },
 ];
 
-export default chillHop;
+export const songsApi = new Promise((resolve) =>
+  setTimeout(resolve, 5000, chillHop),
+);
