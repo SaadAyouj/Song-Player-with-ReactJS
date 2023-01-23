@@ -51,7 +51,9 @@ function HomePage() {
   };
 
   return songs.length === 0 || playedSong === null ? (
-    <div>Loading...</div>
+    <div className="loader-container">
+      <div className="spinner"> </div>
+    </div>
   ) : (
     <div>
       <div className="column">
