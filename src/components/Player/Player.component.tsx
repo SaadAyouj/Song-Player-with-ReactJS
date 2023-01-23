@@ -33,17 +33,13 @@ function Player({
       </div>
       <div className="nav">
         <span>
-          {!Number.isNaN(song?.progress)
-            ? (song.progress * 10 ** -2).toFixed(2)
-            : "0.00"}
+          {song.progress ? (song.progress * 10 ** -2).toFixed(2) : "0.00"}
         </span>
         <div className="nav_wp">
           <div className="bar" style={{ width: `${song.progress}%` }} />
         </div>
         <span>
-          {!Number.isNaN(song?.length)
-            ? (parseFloat(song?.length) * 10 ** -2).toFixed(2)
-            : "0.00"}
+          {song.length ? (song.length * 10 ** -2).toFixed(2) : "0.00"}
         </span>
       </div>
       <div>
